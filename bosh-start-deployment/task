@@ -21,7 +21,9 @@ function setup_bosh_env_vars() {
 
 function bosh_start_deployment() {
   bosh \
-    start
+    -n \
+    start -d ${DEPLOYMENT_NAME}
+
 }
 
 function main() {

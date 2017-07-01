@@ -21,7 +21,8 @@ function setup_bosh_env_vars() {
 
 function bosh_stop_deployment() {
   bosh \
-    stop --hard
+    -n \
+    stop -d ${DEPLOYMENT_NAME} --hard
 }
 
 function main() {
