@@ -12,7 +12,7 @@ inputs:
 - name: cf-deployment-concourse-tasks # - This repo
 
 run:
-  path: cf-deployment-concourse-tasks/bosh_redeploy/task
+  path: cf-deployment-concourse-tasks/bosh-redeploy/task
 
 params:
   BBL_STATE_DIR:
